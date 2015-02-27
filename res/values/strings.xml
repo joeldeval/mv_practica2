@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">practica2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lbl_1">1</string><string name="lbl_2">2</string><string name="lbl_3">3</string><string name="lbl_4">4</string><string name="lbl_5">5</string><string name="lbl_6">6</string><string name="lbl_7">7</string><string name="lbl_8">8</string><string name="lbl_9">9</string><string name="lbl_0">0</string><string name="lbl_punto">.</string><string name="lbl_igual">=</string><string name="lbl_suma">+</string><string name="lbl_resta">-</string><string name="lbl_exponencial">exp</string><string name="lbl_division">/</string><string name="lbl_multiplicacion">*</string><string name="lbl_borrar">-&gt;</string><string name="lbl_raiz">raiz</string><string name="lbl_limpiarTodo">AC</string><string name="lbl_seno">sen</string><string name="lbl_coseno">cos</string><string name="lbl_tangente">tan</string><string name="lbl_log">log</string><string name="action_settings">Settings</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</resources>
