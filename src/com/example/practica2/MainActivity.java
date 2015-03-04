@@ -11,13 +11,22 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 
 	Double[] numeroObtenido = new Double[20];
 	Double resultado;
+	
 	boolean decimal = false;
 	
 	boolean suma = false;
 	boolean resta = false;
 	boolean multiplicacion = false;
 	boolean division = false;
-	//boolean raiz = false;
+	
+	boolean raiz = false;
+	boolean seno = false;
+	boolean coseno = false;
+	boolean tangente = false;
+	boolean log = false;
+	boolean exponencial = false;
+	
+	boolean igual = false;
 	
 	
 	@Override
@@ -94,38 +103,116 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		//numeros
 		case R.id.btn_0:
 			txt_resultado.setText(numero+"0");
+			exponencial = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			
 			break;
 		case R.id.btn_1:
 			txt_resultado.setText(numero+"1");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
 			break;
 		case R.id.btn_2:
 			txt_resultado.setText(numero+"2");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
+			
 			break;
 		case R.id.btn_3:
 			txt_resultado.setText(numero+"3");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
+			
 			break;
 		case R.id.btn_4:
 			txt_resultado.setText(numero+"4");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
+			
 			break;
 		case R.id.btn_5:
 			txt_resultado.setText(numero+"5");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+		
 			break;
 		case R.id.btn_6:
 			txt_resultado.setText(numero+"6");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
+			
 			break;
 		case R.id.btn_7:
 			txt_resultado.setText(numero+"7");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
 			break;
 		case R.id.btn_8:
 			txt_resultado.setText(numero+"8");
+			raiz = true;
+			seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
+		
 			break;
 		case R.id.btn_9:
 			txt_resultado.setText(numero+"9");
+		    raiz = true;
+		    seno = true;
+			coseno = true;
+			tangente = true;
+			log = true;
+			exponencial = true;
+			
+//			suma = true;
+//			resta = true;
+//			multiplicacion = true;
+//			division = true;
+//			igual = true;
 			break;
 			
 			//boton punto
 		case R.id.btn_punto:
-			if(decimal = false){
+			if(decimal == false){
 				txt_resultado.setText(numero+".");
 			decimal = true;
 			}else{
@@ -136,102 +223,165 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			
 			//operaciones aritmeticas			
 		case R.id.btn_suma:
-			suma = true;
+//			if(suma == false){
+//		    	return;
+//		    }else{
+		    suma = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
+		
+//		    }
 			break;
 		case R.id.btn_resta:
-			resta = true;
+//			if(resta == false){
+//		    	return;
+//		    }else{
+		    	resta = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
+			
+//		   }
 			break;
 		case R.id.btn_multiplicacion:
+//			if(multiplicacion == false){
+//		    	return;
+//		    }else{
 			multiplicacion = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
+//		    }
 			break;
 		case R.id.btn_division:
+//			if(division == false){
+//		    	return;
+//		    }else{
 			division = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
+//		    }
 			break;
 		case R.id.btn_raiz:
-			//raiz = true;
+		    if(raiz == false){
+		    	return;
+		    }else{
 			numeroObtenido[0] = Double.parseDouble(numero);
 			resultado = Math.sqrt(numeroObtenido[0]);
 			txt_resultado.setText(String.valueOf(resultado));
+			
+		    }
 			break;
 		case R.id.btn_exponencial:
-			
+			if(exponencial == false){
+		    	return;
+		    }else{
 			numeroObtenido[0] = Double.parseDouble(numero);
 			resultado = Math.exp(numeroObtenido[0]);
 			txt_resultado.setText(String.valueOf(resultado));
+		    }
 			break;
         case R.id.btn_seno:
-			
+        	if(seno == false){
+		    	return;
+		    }else{
 			numeroObtenido[0] = Double.parseDouble(numero);
 			resultado = Math.sin(numeroObtenido[0]);
 			txt_resultado.setText(String.valueOf(resultado));
+		    }
 			break;
         case R.id.btn_coseno:
-			
+        	if(coseno == false){
+		    	return;
+		    }else{
 			numeroObtenido[0] = Double.parseDouble(numero);
 			resultado = Math.cos(numeroObtenido[0]);
 			txt_resultado.setText(String.valueOf(resultado));
+		    }
 			break;
         case R.id.btn_tangente:
-	
+        	if(tangente == false){
+		    	return;
+		    }else{
         	numeroObtenido[0] = Double.parseDouble(numero);
         	resultado = Math.tan(numeroObtenido[0]);
         	txt_resultado.setText(String.valueOf(resultado));
+		    }
         	break;
         case R.id.btn_log:
-	
+        	if(log == false){
+		    	return;
+		    }else{
         	numeroObtenido[0] = Double.parseDouble(numero);
         	resultado = Math.log(numeroObtenido[0]);
         	txt_resultado.setText(String.valueOf(resultado));
+		    }
         	break;
 
 			//boton igual
 		case R.id.btn_igual:
+//			if(igual == false){
+//		    	return;
+//		    }else{
+			
 			numeroObtenido[1] = Double.parseDouble(numero);
 			
 			if(suma == true){
 				resultado = numeroObtenido[0] + numeroObtenido[1];
 				txt_resultado.setText(String.valueOf(resultado));
+				
+				
 			}else if(resta == true){
 				resultado = numeroObtenido[0] - numeroObtenido[1];
 				txt_resultado.setText(String.valueOf(resultado));
+				
 			}else if(multiplicacion == true){
 				resultado = numeroObtenido[0] * numeroObtenido[1];
 				txt_resultado.setText(String.valueOf(resultado));
+				
 			}else if(division == true){
 				resultado = numeroObtenido[0] / numeroObtenido[1];
 				txt_resultado.setText(String.valueOf(resultado));
+				
 			}
-			decimal = false;
 			suma = false;
+            decimal = false;
 			resta = false;
 			multiplicacion = false;
 			division = false;
+			igual = false;
+//		    }
+			
+			
+			//igual=false;
 			break;
 			
 			//limpiando pantalla			
 		case R.id.btn_borrar:
-			txt_resultado.setText(txt_resultado.getText().length()-1);
+			numero = numero.substring(0, numero.length() - 1);
+			txt_resultado.setText(numero);
 			break;
 		case R.id.btn_limpiar:
 			txt_resultado.setText("");
 			decimal = false;
+			raiz = false;
+			seno = false;
+			coseno = false;
+			tangente = false;
+			log = false;
+			exponencial = false;
+			suma = false;
+			resta = false;
+			multiplicacion = false;
+			division = false;
+			igual = false;
 			break;
 		
 		}
 		} catch (Exception e){
-			txt_resultado.setText("Error");
+			txt_resultado.setText("");
 		}
 		
 		
