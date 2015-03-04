@@ -100,14 +100,13 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		try{
 		switch (presionado){
 		
-		//numeros
+		//////////////////////////////////////////////////numeros
 		case R.id.btn_0:
 			txt_resultado.setText(numero+"0");
 			exponencial = true;
 			seno = true;
 			coseno = true;
 			tangente = true;
-			
 			break;
 		case R.id.btn_1:
 			txt_resultado.setText(numero+"1");
@@ -117,7 +116,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
 			break;
 		case R.id.btn_2:
 			txt_resultado.setText(numero+"2");
@@ -127,8 +125,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
-			
 			break;
 		case R.id.btn_3:
 			txt_resultado.setText(numero+"3");
@@ -138,8 +134,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
-			
 			break;
 		case R.id.btn_4:
 			txt_resultado.setText(numero+"4");
@@ -149,8 +143,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
-			
 			break;
 		case R.id.btn_5:
 			txt_resultado.setText(numero+"5");
@@ -160,7 +152,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-		
 			break;
 		case R.id.btn_6:
 			txt_resultado.setText(numero+"6");
@@ -170,8 +161,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
-			
 			break;
 		case R.id.btn_7:
 			txt_resultado.setText(numero+"7");
@@ -181,7 +170,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
 			break;
 		case R.id.btn_8:
 			txt_resultado.setText(numero+"8");
@@ -191,8 +179,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
-		
 			break;
 		case R.id.btn_9:
 			txt_resultado.setText(numero+"9");
@@ -202,12 +188,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			tangente = true;
 			log = true;
 			exponencial = true;
-			
-//			suma = true;
-//			resta = true;
-//			multiplicacion = true;
-//			division = true;
-//			igual = true;
 			break;
 			
 			//boton punto
@@ -221,49 +201,32 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			break;
 			
 			
-			//operaciones aritmeticas			
+////////////////////////////////////////////////////operaciones aritmeticas			
 		case R.id.btn_suma:
-//			if(suma == false){
-//		    	return;
-//		    }else{
 		    suma = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
-		
-//		    }
 			break;
 		case R.id.btn_resta:
-//			if(resta == false){
-//		    	return;
-//		    }else{
 		    	resta = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
-			
-//		   }
 			break;
 		case R.id.btn_multiplicacion:
-//			if(multiplicacion == false){
-//		    	return;
-//		    }else{
 			multiplicacion = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
-//		    }
 			break;
 		case R.id.btn_division:
-//			if(division == false){
-//		    	return;
-//		    }else{
 			division = true;
 			numeroObtenido[0] = Double.parseDouble(numero);
 			txt_resultado.setText("");
 			decimal = false;
-//		    }
 			break;
+//////////////////////////////////////////////////operaciones complejas
 		case R.id.btn_raiz:
 		    if(raiz == false){
 		    	return;
@@ -320,12 +283,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		    }
         	break;
 
-			//boton igual
+//////////////////////////////////////////////////////////////boton igual
 		case R.id.btn_igual:
-//			if(igual == false){
-//		    	return;
-//		    }else{
-			
+
 			numeroObtenido[1] = Double.parseDouble(numero);
 			
 			if(suma == true){
@@ -352,13 +312,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			multiplicacion = false;
 			division = false;
 			igual = false;
-//		    }
-			
-			
-			//igual=false;
+
 			break;
 			
-			//limpiando pantalla			
+////////////////////////////////////////////////////limpiando pantalla			
 		case R.id.btn_borrar:
 			numero = numero.substring(0, numero.length() - 1);
 			txt_resultado.setText(numero);
