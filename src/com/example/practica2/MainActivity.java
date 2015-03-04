@@ -232,8 +232,13 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		    	return;
 		    }else{
 			numeroObtenido[0] = Double.parseDouble(numero);
+			//si el numero es negativo la Raiz no debe funcionar
+			if(numeroObtenido[0]<0){
+				return;
+			}else{
 			resultado = Math.sqrt(numeroObtenido[0]);
 			txt_resultado.setText(String.valueOf(resultado));
+			}
 			
 		    }
 			break;
